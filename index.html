@@ -17,6 +17,31 @@
 
     <title>Andrea Coslovich HomePage</title>
 
+    <!-- Simple cookie alert plugin - "Cookie Consent" - thanks to Silktide Insites -->
+    <!-- More info on https://cookieconsent.insites.com/ and https://github.com/insites/cookieconsent/ -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000000",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#001185",
+          "text": "#ffffff"
+        }
+      },
+      "content": {
+        "message": "The AC homepage use cookies to count page visits and collect statistical data about the website usage. By using the site you agree to that.",
+        "dismiss": "Got it!",
+        "link": "More info"
+      }
+    })});
+    </script>
+	  
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111255709-1"></script>
     <script>
